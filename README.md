@@ -31,4 +31,4 @@ The note taker is an application that can be used to write and save notes.
 https://github.com/AlNHurst/note-taker
 
 ## Contact
-* Direct questions via GitHub (https://github.com/AlNHurst) or email [Alexandra Hurst](mailto:ahurst10@uncc.edu)
+* Direct questions via [GitHub](https://github.com/AlNHurst) or email [Alexandra Hurst](mailto:ahurst10@uncc.edu)
