@@ -15,7 +15,7 @@ The note taker is an application that can be used to write and save notes.
 
 ## Demonstration
 * Video Demonstration
-![gif Demonstration](https://github.com/AlNHurst/team-profile-generator/blob/main/assets/team-generator.gif)
+![gif Demonstration](https://github.com/AlNHurst/note-taker/blob/main/Assets/note-taker.gif)
 
 ## Installation
 *  The application will require the following dependencies: express.js and fs. Run 'npm i' to install the dependencies. 
