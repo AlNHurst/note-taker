@@ -2,6 +2,7 @@
 const path = require('path');
 const fs = require('fs');
 const express = require('express');
+const { v4: uuidv4 } = require('uuid');
 
 // setup express app
 const app = express();
@@ -25,15 +26,20 @@ app.get('/notes', (req, res) => {
 
 // route to db.json 
 app.get('/api/notes', (req, res) => {
-    const data = JSON.parse(fs.readFileSync('db/db.json', 'utf-8'));
-    res.json(data);
+    const data = fs.readFileSync('./db/db.json', 'utf-8');
+    const parseData = JSON.parse(data);
+    res.json(parseData);
 });
 
-// post route to retrieve note and save
+// post route to retrieve note and save; 
+// using uuidv4 function to give each note a unique ID so it can be retrieved when the user clicks on it.
 app.post('/api/notes', (req, res) => {
-    const data =JSON.parse(fs.readFileSync('./db/db.json', 'utf-8'));
-    fs.writeFileSync('./db/db.json', JSON.stringify(data.concat(req.body)), 'utf-8');
-    res.json(req.body);
+    const body = {...req.body, id: uuidv4() }; 
+    const data = fs.readFileSync('./db/db.json', 'utf-8');
+    const parseData = JSON.parse(data);
+    fs.writeFileSync('./db/db.json', JSON.stringify(parseData.concat(body)), 'utf-8');
+    res.send(body);
+    console.log(body);
 });
 
 // start server to listen
