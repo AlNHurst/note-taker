@@ -35,5 +35,5 @@ https://github.com/AlNHurst/note-taker
 * Deployed Website <br>
 https://alnhurst.github.io/note-taker/
 
-## Contact
+## Contact Information
 * Direct questions via [GitHub](https://github.com/AlNHurst) or email [Alexandra Hurst](mailto:ahurst10@uncc.edu)
