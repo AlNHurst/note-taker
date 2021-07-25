@@ -33,7 +33,7 @@ The note taker is an application that can be used to write and save notes.
 https://github.com/AlNHurst/note-taker
 
 * Deployed Website <br>
-https://alnhurst.github.io/note-taker/
+https://vast-coast-59957.herokuapp.com/
 
 ## Contact Information
 * Direct questions via [GitHub](https://github.com/AlNHurst) or email [Alexandra Hurst](mailto:ahurst10@uncc.edu)
