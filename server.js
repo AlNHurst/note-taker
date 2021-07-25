@@ -16,12 +16,12 @@ app.use(express.static('public'));
 // routes
 // route to index html
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/index.html'));
+    res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
 // route to notes html
 app.get('/notes', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/notes.html'));
+    res.sendFile(path.join(__dirname, './public/notes.html'));
 });
 
 // route to db.json 
@@ -39,7 +39,6 @@ app.post('/api/notes', (req, res) => {
     const parseData = JSON.parse(data);
     fs.writeFileSync('./db/db.json', JSON.stringify(parseData.concat(body)), 'utf-8');
     res.send(body);
-    console.log(body);
 });
 
 // start server to listen
